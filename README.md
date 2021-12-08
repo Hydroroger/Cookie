@@ -7,7 +7,7 @@ Cookie can be used by basicly anyone and they will find themselves comfortable p
 
 # getting started
 
-* download the Cookie.exe from the Binaries folder
+* download the Cookie.exe
 * double-click the Cookie.exe once installed you should see this
 
 ![Screenshot-1](https://github.com/Hydroroger/Cookie/blob/main/screenShots/Screenshot-1.png)
@@ -22,7 +22,7 @@ say that you didnt want to type out the thing line by line
 
 then we can also do it in a file!
 
-* download the Cookie.exe from the Binaries folder
+* download the Cookie.exe
 * make a file called Hello_world.Cookie
 * right click the file
 * click open with
