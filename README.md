@@ -30,7 +30,7 @@ then we can also do it in a file!
 * then scroll down until you find notepad then click the notepad icon then click ok (vscode plugin coming soon)
 * Type out these lines of code
 
-![Screenshot-3]()
+![Screenshot-3](https://github.com/Hydroroger/Cookie/blob/main/screenShots/Screenshot-3.png)
 
 * save the file
 * go over to the place where your file is located
@@ -41,7 +41,7 @@ then we can also do it in a file!
 * click `more apps on this pc`
 * Browse to the place where you put the Cookie.exe click it click open you should see this
 
-![Screenshot-4]()
+![Screenshot-4](https://github.com/Hydroroger/Cookie/blob/main/screenShots/Screenshot-4.png)
 
 * thats it!
 
