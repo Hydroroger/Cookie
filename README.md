@@ -13,6 +13,7 @@ Cookie can be used by basicly anyone and they will find themselves comfortable p
 * now go ahead and type `out Hello World!` and click enter and now you should see this
 ![Screenshot-2](https://github.com/Hydroroger/Cookie/blob/main/screenShots/Screenshot-2.png)
 
+
 # Doc
 
 Check The Cookie Wiki section to get docs for the language
