@@ -1,29 +1,44 @@
 #include "Lexer/Lexer.h"
 #include <iostream>
 #include "SyntaxAnalyzer/SyntaxAnalyzer.h"
+#include <fstream>
+#include "GlobalVars.h"
 
-#define INTERPRETER 0
-#define FILE 1
-
-#define MODE INTERPRETER
-
-int main()
+int main(int argc, char const* argv[])
 {
-	std::vector<Token> tokenList;
-	Lexer lexer;
-	std::string input;
-
-	while (true)
+	if (argc == 1)
 	{
-		std::getline(std::cin, input);
-		lexer.Lex(input, tokenList);
-		for (auto i : tokenList)
-		{
-			std::cout << "value: '" << i.value << "' type: '" << lexer.TypeToInt(i.type) << "'\n";
-		}
-		Analyzer::Analyze(tokenList);
-	}
+		std::vector<Token> tokenList;
+		Lexer lexer;
+		std::string input;
 
-	system("pause");
-	return 0;
+		while (!Gvars::close)
+		{
+			std::cout << "-> ";
+			std::getline(std::cin, input);
+			lexer.Lex(input, tokenList);
+			Analyzer::Analyze(tokenList);
+		}
+
+		return 0;
+	}
+	else
+	{
+		std::fstream fs;
+		fs.open(argv[1], std::fstream::in);
+
+		std::vector<Token> tokenList;
+		Lexer lexer;
+		std::string input;
+
+		while (!Gvars::close)
+		{
+			std::getline(fs, input);
+			lexer.Lex(input, tokenList);
+			Analyzer::Analyze(tokenList);
+		}
+
+		fs.close();
+		return 0;
+	}
 }

@@ -15,12 +15,10 @@ namespace Analyzer
 		{
 			if (tokenList.at(i).type == Type::whiteSpace)
 			{
-				Logger::LogToFile(std::to_string(i), "log.txt", Logger::logLevel::Trace);
 				i++;
 			}
 			else
 			{
-				Logger::LogToFile(tokenList.at(i).value, "log.txt", Logger::logLevel::Trace);
 				break;
 			}
 		}
@@ -28,6 +26,14 @@ namespace Analyzer
 		if (tokenList.at(i).value == "out")
 		{
 			functions::out(tokenList);
+		}
+		else if (tokenList.at(i).value == "end")
+		{
+			functions::end();
+		}
+		else if (tokenList.at(i).value == "wait")
+		{
+			functions::wait();
 		}
 		else
 		{

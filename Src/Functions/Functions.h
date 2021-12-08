@@ -1,6 +1,7 @@
 #pragma once
 #include "../Lexer/Extras/Token.h"
 #include <vector>
+#include "../GlobalVars.h"
 
 namespace functions
 {
@@ -15,5 +16,15 @@ namespace functions
 		}
 
 		std::cout << "\n";
+	}
+
+	void end()
+	{
+		Gvars::close = true;
+	}
+
+	void wait()
+	{
+		system("pause");
 	}
 }
