@@ -9,7 +9,7 @@ namespace functions
 	{
 		int i = 0;
 		i += 2;
-
+		
 		while (tokenList.at(i).type != Type::EOL)
 		{
 			std::cout << tokenList.at(i).value; i++;

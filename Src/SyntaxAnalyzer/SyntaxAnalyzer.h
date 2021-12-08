@@ -25,6 +25,11 @@ namespace Analyzer
 
 		if (tokenList.at(i).value == "out")
 		{
+			if (i + 1 == tokenList.size() - 1)
+			{
+				std::cout << "\n";
+				return;
+			}
 			functions::out(tokenList);
 		}
 		else if (tokenList.at(i).value == "end")
