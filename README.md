@@ -1,3 +1,8 @@
+# NOTICE
+
+Active development on Cookie has stopped
+
+
 # Cookie
 
 Cookie is a simple to use interpreted language (compiling options coming soon)
